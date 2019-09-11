@@ -16,6 +16,10 @@ function validarPermisoTamano() {
 	}
 }
 
+// function cancelarAccionLinks() {
+// 	// body...
+// }
+
 function hideShow() {
 	if (menu.classList.contains('active-menu')) {
 		menu.classList.remove('active-menu');

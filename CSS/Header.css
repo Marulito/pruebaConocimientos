@@ -63,6 +63,8 @@ header{
 	text-decoration: none;
 	color: var(--color-gainboro)!important;
 	font-size: .8rem;
+	display: inline-block;
+	width: 100%;
 }
 /*Media Querys*/
 @media screen and (min-width: 320px) {
@@ -74,16 +76,45 @@ header{
 }
 
 @media screen and (min-width: 767px) {
+	.menu-button{
+		position: absolute;
+	}
+
 	#menu-button{
 		display: none;
 	}
+
 	.menu{
 		position: relative;
 		opacity: 1;
 		transition: none;
 	}
+
 	.menu li{
-		display: inline;
+		display: inline-block;
+		padding: .2rem .5rem;
+		border-radius: 0;
+		border-bottom: 0;
+	}
+
+	.menu li:after {
+		content: " ";
+		position: relative;
+		display: block;
+		bottom: 0;
+		left: 0;
+		height: 1.5px;
+		width: 0%;
+		background: var(--color-gainboro);
+		transition: width .3s ease;
+	}
+
+	.menu li:hover:after{
+		width: 100%;
+	}
+
+	.active-item:after{
+		width: 100%;
 	}
 }
 
