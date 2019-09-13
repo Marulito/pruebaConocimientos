@@ -9,7 +9,8 @@
 @import url("./style-fonts-icons.css");
  /*Header*/
 @import url("./Header.css");
-
+/*Main sectión*/
+@import url("./mainSection.css");
 /*---------------------------------------------*/
 :root{
 	/*Colores*/
